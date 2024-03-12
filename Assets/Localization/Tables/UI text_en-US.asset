@@ -1,0 +1,133 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: UI text_en-US
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: en-US
+  m_SharedData: {fileID: 11400000, guid: 14abfa07132e2374c9063bc92cadacd1, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 40227590144
+    m_Localized: Participant
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6484675022848
+    m_Localized: Sex
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6493113962496
+    m_Localized: Age
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20167874596864
+    m_Localized: Education
+    m_Metadata:
+      m_Items: []
+  - m_Id: 21228974788608
+    m_Localized: Welcome, the task will begin shortly. You will be in the center
+      of an environment containing 5 objects. Your task will be to memorize their
+      spatial confguration
+    m_Metadata:
+      m_Items: []
+  - m_Id: 21287216893952
+    m_Localized: During the training phase you will be offered a partial view of
+      objects. You will be able to see the objects in front of you and the one behind
+      you (in green) while the objects to the side will not be present (in red).
+    m_Metadata:
+      m_Items: []
+  - m_Id: 21290069020672
+    m_Localized: By clicking on CHANGE you will be able to switch to another scene.
+      Your point of view will rotate and bring you to see objects that were hidden
+      in previous scenes.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 21291960651776
+    m_Localized: You will have the opportunity to change scenes a limited number
+      of times. Try to memorize the configuration of the objects around you in the
+      most accuarto way possible.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 21293739036672
+    m_Localized: Once the Training phase is over, you can move on to Testing. You
+      will be in the same virtual environment but this time you will not be able
+      to turn around and will have to answer a series of questions based on the objects
+      in front of you.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 21295303512064
+    m_Localized: Here is an example of the first question. You will have to indicate
+      by pulling the trigger of your joystick the object that is behind the two objects
+      in front of you in the scene.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 21297664905216
+    m_Localized: In this case the correct answer will then be object number 1. Once
+      the answer is given another question will appear
+    m_Metadata:
+      m_Items: []
+  - m_Id: 21299405541376
+    m_Localized: In this case you will have to indicate which object is to your left
+      or relative left of object 4
+    m_Metadata:
+      m_Items: []
+  - m_Id: 21301066485760
+    m_Localized: 'Therefore, in this case the correct answer will be: object number
+      2. Once the answer is given a further question will be proposed.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 21305155932160
+    m_Localized: 'In this case the correct answer will then be: object number 5.
+      Once the answer is given you will be given feedback. "correct" if all three
+      answers are correct, "porva again" if even one of the answers is incorrect.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 21302861647872
+    m_Localized: In this case you will have to indicate which object is to your right
+      or to the relative right of object 3.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22996831981568
+    m_Localized: Once you have answered all three questions, you can move on to the
+      next set of objects by pressing the corresponding button. Remember, the experiment
+      will end when you answer all three questions correctly for each pair of objects
+      presented. Good luck!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24242498326528
+    m_Localized: NEXT
+    m_Metadata:
+      m_Items: []
+  - m_Id: 26814617505792
+    m_Localized: EXIT
+    m_Metadata:
+      m_Items: []
+  - m_Id: 45999586299904
+    m_Localized: 'Indicate which object is to your left:'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 46185356218368
+    m_Localized: 'Indicate which object is to your right:'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 46213059596288
+    m_Localized: 'Indicates which object is behind you:'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 48847879426048
+    m_Localized: CHANGE
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

@@ -1,0 +1,47 @@
+
+newmtl R150_G150_B150
+Kd 0.588235318660736 0.588235318660736 0.588235318660736
+Reflectivity Direct 0
+d 1
+newmtl R255_G255_B255
+Kd 1 1 1
+Reflectivity Direct 0
+d 1
+newmtl Furnishings.Fabrics.Canvas.white.png
+Kd 0.501960813999176 0.501960813999176 0.501960813999176
+map_Kd C:\Users\Admin\Desktop\MAKE OBJ FILES\RESI_FUNITURE__mtl_res\Furnishings.Fabrics.Canvas.white.png
+Reflectivity Direct 0
+d 1
+newmtl R178_G178_B178
+Kd 0.69803923368454 0.69803923368454 0.69803923368454
+Reflectivity Direct 0
+d 1
+newmtl R244_G244_B244
+Kd 0.95686274766922 0.95686274766922 0.95686274766922
+Reflectivity Direct 0
+d 1
+newmtl R249_G249_B249
+Kd 0.976470589637756 0.976470589637756 0.976470589637756
+Reflectivity Direct 0
+d 1
+newmtl Furnishings.Fabrics.Linen.Beige.png
+Kd 1 0.960784316062927 0.941176474094391
+map_Kd C:\Users\Admin\Desktop\MAKE OBJ FILES\RESI_FUNITURE__mtl_res\Furnishings.Fabrics.Linen.Beige.png
+Reflectivity Direct 0
+d 1
+newmtl R0_G192_B128
+Kd 0 0.501960813999176 0.752941191196442
+Reflectivity Direct 0
+d 0.1
+newmtl R120_G120_B120
+Kd 0.470588237047195 0.470588237047195 0.470588237047195
+Reflectivity Direct 0
+d 1
+newmtl R214_G214_B214
+Kd 0.839215695858002 0.839215695858002 0.839215695858002
+Reflectivity Direct 0
+d 1
+newmtl R127_G127_B127
+Kd 0.498039215803146 0.498039215803146 0.498039215803146
+Reflectivity Direct 0
+d 1

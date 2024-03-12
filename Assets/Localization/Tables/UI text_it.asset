@@ -1,0 +1,133 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: UI text_it
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: it
+  m_SharedData: {fileID: 11400000, guid: 14abfa07132e2374c9063bc92cadacd1, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 40227590144
+    m_Localized: Partecipante
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6484675022848
+    m_Localized: Sesso
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6493113962496
+    m_Localized: "Et\xE0"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20167874596864
+    m_Localized: Educazione
+    m_Metadata:
+      m_Items: []
+  - m_Id: 21228974788608
+    m_Localized: "Benvenuto, a breve inizier\xE0 il task. Ti troverai al centro di
+      un ambiente contenente 5 oggetti. Il tuo compito sar\xE0 memorizzare la loro
+      confgurazione spaziale"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 21287216893952
+    m_Localized: "Durante la fase di training ti verr\xE0 proposta una visione parziale
+      degli oggetti. Potrai vedere gli oggetti di fronte a te e quello dietro di
+      te (in verde) mentre gli oggetti a lato non saranno presenti (in rosso). "
+    m_Metadata:
+      m_Items: []
+  - m_Id: 21290069020672
+    m_Localized: "Cliccando su CAMBIO potrai passare ad un altra scena. Il tuo punto
+      di vista ruoter\xE0 e portai vedere oggetti che nelle scene precedenti erano
+      nascosti."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 21291960651776
+    m_Localized: "Avrai la possibilit\xE0 cambiare scena un numero limitato di volte.
+      Prova a memorizzare la configurazione degli oggetti attorno a te nel modo pi\xF9
+      accuarto possibile."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 21293739036672
+    m_Localized: Terminata la fase di Training potrai passare al Testing. Ti troverai
+      nel medesimo ambiente virtuale ma questa volta non potrai voltarti e dovrai
+      rispondere ad una serie di domande basandoti sugli oggetti di fronte a te.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 21295303512064
+    m_Localized: Ecco un esempio della prima domanda. Dovrai indicare premendo il
+      grilletto del tuo joystick l'oggetto che si trova dietro i due oggetti di fronte
+      a te nella scena.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 21297664905216
+    m_Localized: "In questo caso la risposta corretta sar\xE0 quindi oggetto numero
+      1. Una volta data la risposta comparir\xE0 un altra domanda"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 21299405541376
+    m_Localized: In questo caso dovrai indicare quale oggetto si trova alla tua sinistra
+      o alla sinistra relativa dell'oggetto 4
+    m_Metadata:
+      m_Items: []
+  - m_Id: 21301066485760
+    m_Localized: "In questo caso la risposta corretta sar\xE0 quindi: oggetto numero
+      2. Una volta data la risposta verr\xE0 proposta un ulteriore domanda."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 21302861647872
+    m_Localized: In questo caso dovrai indicare quale oggetto si trova alla tua destra
+      o alla destra relativa dell'oggetto 3.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 21305155932160
+    m_Localized: "In questo caso la risposta corretta sar\xE0 quindi: oggetto numero
+      5. Una volta data la risposta ti verr\xE0 fornito un feedback. \"corretto\"
+      se tutte e tre le risposte saranno corrette, \"porva ancora\" se anche solo
+      una delle risposte sar\xE0 errata."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22996831981568
+    m_Localized: "Una volta risposto a tutte e tre le domande, potrai passare al
+      prossimo set di oggetti premendo il pulsante corrispondente. Ricorda, l'esperimento
+      terminer\xE0 quando risponderai correttamente a tutte e tre le domande per
+      ogni coppia di oggetti presentata. In bocca al lupo!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24242498326528
+    m_Localized: AVANTI
+    m_Metadata:
+      m_Items: []
+  - m_Id: 26814617505792
+    m_Localized: ESCI
+    m_Metadata:
+      m_Items: []
+  - m_Id: 45999586299904
+    m_Localized: 'Indica quale oggetto si trova alla tua sinistra:'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 46185356218368
+    m_Localized: 'Indica quale oggetto si trova alla tua destra:'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 46213059596288
+    m_Localized: 'Indica quale oggetto si trova dietro di te:'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 48847879426048
+    m_Localized: CAMBIO
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

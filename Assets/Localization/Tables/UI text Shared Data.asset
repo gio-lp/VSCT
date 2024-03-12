@@ -1,0 +1,116 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b11a58205ec3474ca216360e9fa74a8, type: 3}
+  m_Name: UI text Shared Data
+  m_EditorClassIdentifier: 
+  m_TableCollectionName: UI text
+  m_TableCollectionNameGuidString: 14abfa07132e2374c9063bc92cadacd1
+  m_Entries:
+  - m_Id: 40227590144
+    m_Key: ID
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6484675022848
+    m_Key: Sex
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6493113962496
+    m_Key: Age
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20167874596864
+    m_Key: Education
+    m_Metadata:
+      m_Items: []
+  - m_Id: 21228974788608
+    m_Key: Inst1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 21287216893952
+    m_Key: Inst2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 21290069020672
+    m_Key: Inst3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 21291960651776
+    m_Key: Inst4
+    m_Metadata:
+      m_Items: []
+  - m_Id: 21293739036672
+    m_Key: Inst5
+    m_Metadata:
+      m_Items: []
+  - m_Id: 21295303512064
+    m_Key: Inst6
+    m_Metadata:
+      m_Items: []
+  - m_Id: 21297664905216
+    m_Key: Inst7
+    m_Metadata:
+      m_Items: []
+  - m_Id: 21299405541376
+    m_Key: Inst8
+    m_Metadata:
+      m_Items: []
+  - m_Id: 21301066485760
+    m_Key: Inst9
+    m_Metadata:
+      m_Items: []
+  - m_Id: 21302861647872
+    m_Key: Inst10
+    m_Metadata:
+      m_Items: []
+  - m_Id: 21305155932160
+    m_Key: Inst11
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22996831981568
+    m_Key: Inst12
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24242498326528
+    m_Key: Next
+    m_Metadata:
+      m_Items: []
+  - m_Id: 26814617505792
+    m_Key: Exit
+    m_Metadata:
+      m_Items: []
+  - m_Id: 45999586299904
+    m_Key: Qsx
+    m_Metadata:
+      m_Items: []
+  - m_Id: 46185356218368
+    m_Key: Qdx
+    m_Metadata:
+      m_Items: []
+  - m_Id: 46213059596288
+    m_Key: Qbe
+    m_Metadata:
+      m_Items: []
+  - m_Id: 48847879426048
+    m_Key: Change
+    m_Metadata:
+      m_Items: []
+  m_Metadata:
+    m_Items: []
+  m_KeyGenerator:
+    rid: 4008677682356159135
+  references:
+    version: 2
+    RefIds:
+    - rid: 4008677682356159135
+      type: {class: DistributedUIDGenerator, ns: UnityEngine.Localization.Tables, asm: Unity.Localization}
+      data:
+        m_CustomEpoch: 1709640460336
