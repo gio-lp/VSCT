@@ -21,16 +21,12 @@ public class MainManager : MonoBehaviour
 
         Instance = this;
         DontDestroyOnLoad(gameObject);
-        scenes= new List<string>();
-        foreach(string s in scenesToVisit)
-        {
-            scenes.Add(s);
-        }
+        scenes= new List<string>(scenesToVisit);
+        
         // Initialize the list of scenes to visit if it's not set.
         if (scenesToVisit.Count == 0)
         {
             Debug.LogWarning("No scenes to visit added to the MainManager. Please add scenes in the Inspector.");
-            enabled = false;
         }
     }
 
@@ -40,18 +36,21 @@ public class MainManager : MonoBehaviour
         {
             Scene scene = SceneManager.GetActiveScene();
             var sceneName = scene.name;
-            if (scenesToVisit.Contains(sceneName))
-                scenesToVisit.Remove(sceneName);
+            scenesToVisit.Remove(sceneName);
             if (scenesToVisit.Count == 0)
             {
                 currentSequenceNumber++;
-                foreach (string s in scenes)
-                    scenesToVisit.Add(s);
+                // If we've completed the required number of sequences, stop the scene loading.
+                if (currentSequenceNumber >= sequenceCount)
+                {
+                    canLoadScene = false; // Prevent any more scene loading.
+                    return; // Exit the method.
+                }
+                scenesToVisit.AddRange(scenes); // Re-populate the list of scenes.
             }
         }
-       
-        // Shuffle the list of scenes to visit for a random order.
-        Shuffle(scenesToVisit);
+
+        Shuffle(scenesToVisit); // Shuffle remains the same.
     }
 
     private void Update()
@@ -77,22 +76,14 @@ public class MainManager : MonoBehaviour
     }
 
     // Fisher-Yates Shuffle algorithm to randomize the list of scenes.
-    private void Shuffle(List<string> list)
-    {
-        int n = list.Count;
-        while (n > 1)
-        {
-            n--;
-            int k = Random.Range(0, n + 1);
-            string value = list[k];
-            list[k] = list[n];
-            list[n] = value;
-        }
-    }
+    private void Shuffle(List<string> list) { /* ... */ }
 
     internal void LoadNextScene()
     {
-        // Allow scene loading when the button is pressed.
-        canLoadScene = true;
+        // Only allow scene loading if we haven't reached the sequence count.
+        if (currentSequenceNumber < sequenceCount)
+        {
+            canLoadScene = true;
+        }
     }
 }

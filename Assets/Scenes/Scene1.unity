@@ -6861,7 +6861,7 @@ MonoBehaviour:
   - Scene3
   - Scene4
   - Scene5
-  sequenceCount: 0
+  sequenceCount: 10
 --- !u!4 &1986295047
 Transform:
   m_ObjectHideFlags: 0
