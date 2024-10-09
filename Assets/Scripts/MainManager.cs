@@ -21,12 +21,13 @@ public class MainManager : MonoBehaviour
 
         Instance = this;
         DontDestroyOnLoad(gameObject);
-        scenes= new List<string>(scenesToVisit);
-        
+        scenes = new List<string>(scenesToVisit); // Initialize scenes with a copy of scenesToVisit.
+
         // Initialize the list of scenes to visit if it's not set.
         if (scenesToVisit.Count == 0)
         {
-            Debug.LogWarning("No scenes to visit added to the MainManager. Please add scenes in the Inspector.");
+            Debug.LogWarning("No scenes to visit added to the MainManagerTrain. Please add scenes in the Inspector.");
+            // No need to disable the entire script, just the scene loading part.
         }
     }
 
@@ -55,27 +56,23 @@ public class MainManager : MonoBehaviour
 
     private void Update()
     {
-        // Check if there are scenes left to visit and if loading is allowed.
         if (canLoadScene && scenesToVisit.Count > 0)
         {
-            // Get the next scene to visit.
             string nextScene = scenesToVisit[0];
             Scene scene = SceneManager.GetActiveScene();
             var sceneName = scene.name;
             int i = 1;
-            while (nextScene == sceneName && i<scenesToVisit.Count)
+            while (nextScene == sceneName && i < scenesToVisit.Count)
             {
                 nextScene = scenesToVisit[i++];
             }
-                // Load the next scene.
-                SceneManager.LoadScene(nextScene);
 
-            // Disable further scene loading until the button press.
-            canLoadScene = false;
+            SceneManager.LoadScene(nextScene);
+            canLoadScene = false; // Disable further scene loading until the next call to LoadNextScene.
         }
     }
 
-    // Fisher-Yates Shuffle algorithm to randomize the list of scenes.
+    // Shuffle method remains unchanged.
     private void Shuffle(List<string> list) { /* ... */ }
 
     internal void LoadNextScene()
