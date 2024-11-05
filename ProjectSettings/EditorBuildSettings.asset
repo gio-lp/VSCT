@@ -29,21 +29,36 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Scene5.unity
     guid: 0d43bcf57cfd53e428cdf9a9518f3022
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Training Scenes/Scene1 1.unity
     guid: ec646e94e58c1124a81dff89cb2a6d53
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Training Scenes/Scene2 1.unity
     guid: 4e297c8b4ae0c53449ac9d8d66fa3f8b
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Training Scenes/Scene3 1.unity
     guid: 8603ae6d9426d7b4a847a2238ec3c27f
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Training Scenes/Scene4 1.unity
     guid: 5343652df5f0d6d408931b409fd03fd3
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Training Scenes/Scene5 1.unity
     guid: f71869ccb69b3464e9165d2db1ba1ea4
+  - enabled: 1
+    path: Assets/Scenes/Scene1_1.unity
+    guid: c22e7ef133abd2b4c944f32d95df745a
+  - enabled: 1
+    path: Assets/Scenes/Scene2_1.unity
+    guid: 7dad6082ee35e834cad4a4ebc0f07b74
+  - enabled: 1
+    path: Assets/Scenes/Scene3_1.unity
+    guid: eb3fee3494e3699429db57a8d50f9ce2
+  - enabled: 1
+    path: Assets/Scenes/Scene4_1.unity
+    guid: 6e9cb0ec2725412418d4270fea5fff1d
+  - enabled: 1
+    path: Assets/Scenes/Scene5_1.unity
+    guid: 2ec1e6808d3550242a37d5ed4c4da567
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 8fccb80e6c9a84389a75f2c1ed4d786d, type: 2}
     Unity.XR.WindowsMR.Settings: {fileID: 11400000, guid: 95fc937efc15ea84b93f5e1ad7de423f, type: 2}
