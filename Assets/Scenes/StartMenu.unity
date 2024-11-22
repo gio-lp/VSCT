@@ -1831,7 +1831,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 567394907b055994783b110ce2b61d91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  filePath: "C:\\Users\\giorg\\OneDrive - Alma Mater Studiorum Universit\xE0 di Bologna\\Desktop\\Dati"
+  filePath: C:\Users\PSW MSI Immensive\Desktop\Alberto_VSCT
 --- !u!4 &1430658949
 Transform:
   m_ObjectHideFlags: 0

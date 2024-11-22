@@ -35,15 +35,16 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 21228974788608
-    m_Localized: Welcome, the task will begin shortly. You will be in the center
-      of an environment containing 5 objects. Your task will be to memorize their
-      spatial confguration
+    m_Localized: 'Welcome, the task will begin shortly. You will find yourself in
+      the center of an environment containing five objects. Your task will be to
+      memorize their spatial configuration. In this task, you will always see two
+      objects positioned in front of you, and you will be asked three questions:'
     m_Metadata:
       m_Items: []
   - m_Id: 21287216893952
-    m_Localized: During the training phase you will be offered a partial view of
-      objects. You will be able to see the objects in front of you and the one behind
-      you (in green) while the objects to the side will not be present (in red).
+    m_Localized: "At this point, if all the answers are correct, you will see \"Correct!\"
+      appear. Click on \"Next.\" Otherwise, you\u2019ll see \"Try again!\"\u2014turn
+      around and check object 1."
     m_Metadata:
       m_Items: []
   - m_Id: 21290069020672
@@ -53,9 +54,10 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 21291960651776
-    m_Localized: You will have the opportunity to change scenes a limited number
-      of times. Try to memorize the configuration of the objects around you in the
-      most accuarto way possible.
+    m_Localized: '
+
+      Here is a top-down view related to the question you just
+      saw'
     m_Metadata:
       m_Items: []
   - m_Id: 21293739036672
@@ -78,7 +80,7 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 21299405541376
     m_Localized: In this case you will have to indicate which object is to your left
-      or relative left of object 4
+      or relative left of object 3
     m_Metadata:
       m_Items: []
   - m_Id: 21301066485760
@@ -87,21 +89,19 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 21305155932160
-    m_Localized: 'In this case the correct answer will then be: object number 5.
-      Once the answer is given you will be given feedback. "correct" if all three
-      answers are correct, "porva again" if even one of the answers is incorrect.'
+    m_Localized: 'In this case the correct answer will then be: object number 5. '
     m_Metadata:
       m_Items: []
   - m_Id: 21302861647872
     m_Localized: In this case you will have to indicate which object is to your right
-      or to the relative right of object 3.
+      or to the relative right of object 4.
     m_Metadata:
       m_Items: []
   - m_Id: 22996831981568
-    m_Localized: Once you have answered all three questions, you can move on to the
-      next set of objects by pressing the corresponding button. Remember, the experiment
-      will end when you answer all three questions correctly for each pair of objects
-      presented. Good luck!
+    m_Localized: To summarize, each time you make a mistake, you can look back to
+      update your mental map; otherwise, keep the configuration of the objects in
+      mind and click "Next." The task will end when you can no longer change the
+      scene. Good luck!
     m_Metadata:
       m_Items: []
   - m_Id: 24242498326528

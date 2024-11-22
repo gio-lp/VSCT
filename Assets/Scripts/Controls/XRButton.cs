@@ -1,11 +1,12 @@
 ﻿using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.XR.Interaction.Toolkit;
+using UnityEngine.XR.Interaction.Toolkit.Interactors;
 
 /// <summary>
 /// An interactable that can be pressed by a direct interactor
 /// </summary>
-public class XRButton : XRBaseInteractable
+public class XRButton : UnityEngine.XR.Interaction.Toolkit.Interactables.XRBaseInteractable
 {
     [Tooltip("The transform of the visual component of the button")]
     public Transform buttonTransform = null;
@@ -22,7 +23,7 @@ public class XRButton : XRBaseInteractable
     private float yMin = 0.0f;
     private float yMax = 0.0f;
 
-    private XRBaseInteractor hoverInteractor = null;
+    private IXRInteractor hoverInteractor = null; // Changed type to IXRInteractor
 
     private float hoverHeight = 0.0f;
     private float startHeight = 0.0f;
@@ -44,7 +45,7 @@ public class XRButton : XRBaseInteractable
 
     private void StartPress(HoverEnterEventArgs eventArgs)
     {
-        hoverInteractor = eventArgs.interactor;
+        hoverInteractor = eventArgs.interactorObject; // Updated to interactorObject
         hoverHeight = GetLocalYPosition(hoverInteractor.transform.position);
         startHeight = buttonTransform.localPosition.y;
     }
@@ -70,9 +71,9 @@ public class XRButton : XRBaseInteractable
 
     public override void ProcessInteractable(XRInteractionUpdateOrder.UpdatePhase updatePhase)
     {
-        if(updatePhase == XRInteractionUpdateOrder.UpdatePhase.Dynamic)
+        if (updatePhase == XRInteractionUpdateOrder.UpdatePhase.Dynamic)
         {
-            if (hoverInteractor)
+            if (hoverInteractor != null)
             {
                 float height = FindButtonHeight();
                 ApplyHeight(height);
@@ -110,11 +111,11 @@ public class XRButton : XRBaseInteractable
     {
         bool inPosition = InPosition();
 
-        if(inPosition != previousPress)
+        if (inPosition != previousPress)
         {
             previousPress = inPosition;
 
-            if(inPosition)
+            if (inPosition)
             {
                 OnPress.Invoke();
             }
@@ -131,7 +132,7 @@ public class XRButton : XRBaseInteractable
         return buttonTransform.localPosition.y < threshold;
     }
 
-    public override bool IsSelectableBy(XRBaseInteractor interactor)
+    public override bool IsSelectableBy(UnityEngine.XR.Interaction.Toolkit.Interactors.XRBaseInteractor interactor)
     {
         return false;
     }

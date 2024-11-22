@@ -59,6 +59,21 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Scene5_1.unity
     guid: 2ec1e6808d3550242a37d5ed4c4da567
+  - enabled: 1
+    path: Assets/Scenes/Scene1_2.unity
+    guid: b330a57f884a51440aca29e0752fd821
+  - enabled: 1
+    path: Assets/Scenes/Scene2_2.unity
+    guid: 8d31989f999bac04fab98869d053f000
+  - enabled: 1
+    path: Assets/Scenes/Scene3_2.unity
+    guid: f7008d2590935264dbe2f743d8825151
+  - enabled: 1
+    path: Assets/Scenes/Scene4_2.unity
+    guid: e2875a69ec9321f48820bd0e6b7d3187
+  - enabled: 1
+    path: Assets/Scenes/Scene5_2.unity
+    guid: 2c1d7997ceff23f4fbf3004a666cdadb
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 8fccb80e6c9a84389a75f2c1ed4d786d, type: 2}
     Unity.XR.WindowsMR.Settings: {fileID: 11400000, guid: 95fc937efc15ea84b93f5e1ad7de423f, type: 2}

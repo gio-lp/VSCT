@@ -1,6 +1,8 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit;
+using UnityEngine.XR.Interaction.Toolkit.Interactables;
+using UnityEngine.XR.Interaction.Toolkit.Interactors;
 
 /// <summary>
 /// Toggle between the direct and ray interactor if the direct interactor isn't touching any objects
@@ -21,12 +23,7 @@ public class ToggleRay : MonoBehaviour
     private void Awake()
     {
         rayInteractor = GetComponent<XRRayInteractor>();
-        SwitchInteractors(false); // moved to here
-    }
-
-    private void Start()
-    {
-        //SwitchInteractors(false);
+        SwitchInteractors(false); // Initialize with ray interactor disabled
     }
 
     public void ActivateRay()
@@ -43,9 +40,12 @@ public class ToggleRay : MonoBehaviour
 
     private bool TouchingObject()
     {
-        List<XRBaseInteractable> targets = new List<XRBaseInteractable>();
+        // Use List<IXRInteractable> instead of List<XRBaseInteractable> to match the updated method signature
+        List<IXRInteractable> targets = new List<IXRInteractable>();
         directInteractor.GetValidTargets(targets);
-        return (targets.Count > 0);
+
+        // Return true if there are any valid targets, meaning the direct interactor is touching something
+        return targets.Count > 0;
     }
 
     private void SwitchInteractors(bool value)

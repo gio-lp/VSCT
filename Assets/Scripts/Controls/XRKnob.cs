@@ -2,6 +2,8 @@
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.XR.Interaction.Toolkit;
+using UnityEngine.XR.Interaction.Toolkit.Interactables;
+using UnityEngine.XR.Interaction.Toolkit.Interactors;
 
 /// <summary>
 /// An interactable knob that follows the rotation of the interactor
@@ -22,7 +24,7 @@ public class XRKnob : XRBaseInteractable
 
     [Serializable] public class ValueChangeEvent : UnityEvent<float> { }
 
-    // When the knobs's value changes
+    // When the knob's value changes
     public ValueChangeEvent OnValueChange = new ValueChangeEvent();
 
     public float Value { get; private set; } = 0.0f;
@@ -54,7 +56,7 @@ public class XRKnob : XRBaseInteractable
 
     private void StartTurn(SelectEnterEventArgs eventArgs)
     {
-        selectInteractor = eventArgs.interactor;
+        selectInteractor = eventArgs.interactorObject as XRBaseInteractor;
         selectRotation = selectInteractor.transform.rotation;
     }
 
@@ -85,7 +87,7 @@ public class XRKnob : XRBaseInteractable
     {
         Quaternion rotationDifference = selectInteractor.transform.rotation * Quaternion.Inverse(selectRotation);
         Vector3 rotatedForward = rotationDifference * knobTransform.forward;
-        return (Vector3.SignedAngle(knobTransform.forward, rotatedForward, transform.up));
+        return Vector3.SignedAngle(knobTransform.forward, rotatedForward, transform.up);
     }
 
     private float ApplyRotation(float angle)
@@ -105,7 +107,7 @@ public class XRKnob : XRBaseInteractable
         if (angle > 180)
             angle -= 360;
 
-        return (Mathf.Clamp(angle, minimum, maximum));
+        return Mathf.Clamp(angle, minimum, maximum);
     }
 
     private void SetValue(float rotation)

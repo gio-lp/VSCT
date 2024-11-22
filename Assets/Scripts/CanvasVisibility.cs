@@ -1,10 +1,10 @@
 using UnityEngine;
-using UnityEngine.XR.Interaction.Toolkit;
+
 using UnityEngine.UI;
 
 public class CanvasVisibility : MonoBehaviour
 {
-    public XRSocketInteractor socketInteractor;
+    public UnityEngine.XR.Interaction.Toolkit.Interactors.XRSocketInteractor socketInteractor;
     public Canvas[] canvases;
     private Canvas currentCanvas = null;
 

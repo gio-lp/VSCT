@@ -37,13 +37,14 @@ MonoBehaviour:
   - m_Id: 21228974788608
     m_Localized: "Benvenuto, a breve inizier\xE0 il task. Ti troverai al centro di
       un ambiente contenente 5 oggetti. Il tuo compito sar\xE0 memorizzare la loro
-      confgurazione spaziale"
+      configurazione spaziale. In questo task vedrai sempre due oggetti posizionati
+      di fronte a te e ti verranno poste tre domande:"
     m_Metadata:
       m_Items: []
   - m_Id: 21287216893952
-    m_Localized: "Durante la fase di training ti verr\xE0 proposta una visione parziale
-      degli oggetti. Potrai vedere gli oggetti di fronte a te e quello dietro di
-      te (in verde) mentre gli oggetti a lato non saranno presenti (in rosso). "
+    m_Localized: "A questo punto se tutte le risposte sono corrette vedrei comparire
+      \"Corretct!\"=Clicca su \u201CAvanti\u201D. Nel caso contrario \"Try again!\"=
+      girati e controlla oggetto 1."
     m_Metadata:
       m_Items: []
   - m_Id: 21290069020672
@@ -53,9 +54,8 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 21291960651776
-    m_Localized: "Avrai la possibilit\xE0 cambiare scena un numero limitato di volte.
-      Prova a memorizzare la configurazione degli oggetti attorno a te nel modo pi\xF9
-      accuarto possibile."
+    m_Localized: 'Ecco una visione dall''alto che si riferisce alla domanda che hai
+      appena visto. '
     m_Metadata:
       m_Items: []
   - m_Id: 21293739036672
@@ -77,7 +77,7 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 21299405541376
     m_Localized: In questo caso dovrai indicare quale oggetto si trova alla tua sinistra
-      o alla sinistra relativa dell'oggetto 4
+      o alla sinistra relativa dell'oggetto 3
     m_Metadata:
       m_Items: []
   - m_Id: 21301066485760
@@ -87,21 +87,19 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 21302861647872
     m_Localized: In questo caso dovrai indicare quale oggetto si trova alla tua destra
-      o alla destra relativa dell'oggetto 3.
+      o alla destra relativa dell'oggetto 4.
     m_Metadata:
       m_Items: []
   - m_Id: 21305155932160
     m_Localized: "In questo caso la risposta corretta sar\xE0 quindi: oggetto numero
-      5. Una volta data la risposta ti verr\xE0 fornito un feedback. \"corretto\"
-      se tutte e tre le risposte saranno corrette, \"porva ancora\" se anche solo
-      una delle risposte sar\xE0 errata."
+      5. "
     m_Metadata:
       m_Items: []
   - m_Id: 22996831981568
-    m_Localized: "Una volta risposto a tutte e tre le domande, potrai passare al
-      prossimo set di oggetti premendo il pulsante corrispondente. Ricorda, l'esperimento
-      terminer\xE0 quando risponderai correttamente a tutte e tre le domande per
-      ogni coppia di oggetti presentata. In bocca al lupo!"
+    m_Localized: "Ricapitolando, ogni volta che sbaglierai potrai guardarti indietro
+      per aggiornare la tua mappa mentale, in caso contrario mantieni in memoria
+      la configurazione degli oggetti e clicca su avanti. Il compito finir\xE0 quando
+      non ti sar\xE0 pi\xF9 permesso cambiare scena. Buona fortuna! "
     m_Metadata:
       m_Items: []
   - m_Id: 24242498326528
